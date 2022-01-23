@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e                          
+# Open google-chrome browser
+
+if ! command -v google-chrome-stable &>/dev/null ; then
+	echo "google-chrome-stable is not found"
+	exit 1
+fi 
+
+google-chrome-stable 1>/dev/null 2>/dev/null &
+
+# Alternatives
+# google-chrome-stable 1>/dev/null 2>&1
+# google-chrome-stable &>/dev/null

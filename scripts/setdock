@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e                          
+#Disable or enable the gnome side dock in Ubuntu
+if [[ $# > 2 ]]; then
+		echo "too many arguments"
+		exit 1
+fi
+
+if [[ $1 != enable && $1 != disable ]]
+then
+	echo "use enable or disable"
+	exit 1 
+fi
+
+gnome-extensions $1 ubuntu-dock@ubuntu.com

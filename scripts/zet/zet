@@ -1,0 +1,9 @@
+#!/bin/bash
+
+FOO="$(date +%s)"
+mkdir $FOO
+vim ${FOO}/README.md
+echo $FOO
+git add "${FOO}/README.md"
+git commit -m "${FOO} added"
+git push

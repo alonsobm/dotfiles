@@ -1,0 +1,10 @@
+#!/bin/bash
+
+COMMAND=cmatrix
+
+if command -v $COMMAND &>/dev/null ; then
+    echo "$COMMAND already installed"
+    exit
+fi
+
+sudo apt install $COMMAND -y

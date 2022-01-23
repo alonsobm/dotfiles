@@ -1,0 +1,10 @@
+#!/bin/bash
+
+COMMAND=tree
+
+if command -v $COMMAND &>/dev/null ; then
+    echo "$COMMAND already installed"
+    exit
+fi
+
+sudo apt install $COMMAND -y

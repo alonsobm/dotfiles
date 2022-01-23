@@ -1,0 +1,13 @@
+#!/bin/bash
+NAME="John"
+echo $NAME
+echo "$NAME"
+echo "que loco xd ${NAME}!sss"
+
+func() {
+	echo "hello ${1}2hahah and  read book-$2"
+}
+
+MYLET=$(func "ALON"  "asdas")
+
+echo "hiiiiiii ${MYLET[1]}"
